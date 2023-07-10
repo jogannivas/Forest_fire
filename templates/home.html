@@ -1,0 +1,40 @@
+
+
+
+< Welcome to jogannivas first ML Project >
+<html>
+<head>
+  <title>FWI prediction</title>
+</head>
+<body>
+  <div class="login">
+    <h2>FWI prediction</h2>
+    <form action="{{ url_for('predict_datapoint') }}" method="POST">
+      <label for="  ">Temprature:</label>
+      <input type="text" id="Temprature" name="Temprature" required><br>
+      <label for="  ">RH:</label>
+      <input type="text" id="RH" name="RH" required><br>
+      <label for="  ">Ws:</label>
+      <input type="text" id="Ws" name="Ws" required><br>
+      <label for="  ">Rain:</label>
+      <input type="text" id="Rain" name="Rain" required><br>
+      <label for="  ">FFMC:</label>
+      <input type="text" id="FFMC" name="FFMC" required><br>
+      <label for="  ">Name:</label>
+      <input type="text" id="DMC" name="DMC" required><br>
+      <label for="  ">ISI:</label>
+      <input type="text" id="ISI" name="ISI" required><br>
+      <label for="  ">CLASSES:</label>
+      <input type="text" id="Classes" name="Classes" required><br>
+      <label for="  ">REGION:</label>
+      <input type="text" id="Region" name="Region" required><br>
+
+
+      <button type="Ready to do the submit" class="Hello This Is Predict Button">Ready to do the submit</button>
+    </form>
+  </div>
+  <h2>
+    THE PWI PREDICTION IS HERE {{ result }}
+  </h2
+</body>
+</html>
